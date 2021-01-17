@@ -8,8 +8,9 @@ class GravityCalculator {
         double fallingTime = 10.0;
         double initialPosition = 0.0;
         double finalPosition = 0.0;
-        double time = 10.0;
-        finalPosition = (gravity*Math.pow(time, 2))/2 + (initialVelocity * fallingTime) + initialPosition;
+
+        finalPosition = (gravity*Math.pow(fallingTime, 2))/2
+                + (initialVelocity * fallingTime) + initialPosition;
         System.out.printf("%.1f m", finalPosition);
     }
 }
